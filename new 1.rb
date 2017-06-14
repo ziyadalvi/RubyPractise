@@ -1,4 +1,7 @@
+def office 
+	yield("Ziyad")
+	yield("Taha")
+	yield("Zohair")
+end
 
-line = "Perl"
-puts "Scripting language mentioned: #{line}" if line =~ /Perl|Python/
-
+5.times { office { |name| puts name }}
